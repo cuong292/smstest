@@ -1,0 +1,2 @@
+rootProject.name = "My SmsListener"
+include ':app'
