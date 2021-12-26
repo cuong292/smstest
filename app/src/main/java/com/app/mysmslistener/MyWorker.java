@@ -2,6 +2,7 @@ package com.app.mysmslistener;
 
 import android.content.Context;
 
+import org.greenrobot.eventbus.EventBus;
 import org.jetbrains.annotations.NotNull;
 
 import androidx.annotation.NonNull;
@@ -18,7 +19,7 @@ public class MyWorker extends Worker {
     @NotNull
     @Override
     public Result doWork() {
-        System.out.println("cuongnb");
+        EventBus.getDefault().post(new EventBusListener.FirstJobDone());
         return Result.success();
     }
 }

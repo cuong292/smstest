@@ -1,6 +1,7 @@
-package com.example.myapplication;
+package com.app.mysmslistener;
 
-class Coffee {
+
+public class Coffee {
     public String description;
     public String title;
     public int id;
